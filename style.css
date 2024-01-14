@@ -1,0 +1,276 @@
+
+       
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    align-items: center;
+    background-color: rgb(250, 241, 241);
+    position: sticky;
+    top: 0;
+}
+
+.icon {
+    height: 3rem;
+    width: 3rem;
+    background-image: url(assets/papus-high-resolution-logo-transparent.png);
+    background-size: cover;
+    margin-left: 0.5rem;
+}
+
+.home {
+    margin-right: 1rem;
+}
+
+.home ul a {
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+    margin: 0px 3px 3px 3px;
+    border-right: 2px solid black;
+    padding-right: 10px;
+}
+
+.nav .home i {
+    display: none;
+
+}
+
+.home ul a button {
+    background-color: rgb(38, 121, 173);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    height: 3rem;
+    width: 8rem;
+    font-size: 2rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.name-image {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.PPS {
+    margin-top: 5vh;
+    margin-left: 0.5rem;
+    height: 40vh;
+    width: 35vw;
+    line-height: 12vh;
+    font-size: 9vh;
+    font-family: 'Nova Square', sans-serif;
+}
+
+.PPS span {
+    color: orangered;
+}
+
+.image {
+    background-image: url(assets/orangeName.png);
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    margin-top: 3vw;
+    margin-right: 5vw;
+
+}
+
+h2 {
+    margin-top: 5vh;
+    margin-left: 0.5rem;
+    line-height: 8vh;
+    font-size: 7vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.members {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: white;
+    margin: 15px;
+    height: 300px;
+    width: 180px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.box img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.members .box .desc {
+    margin: 10px;
+}
+
+.members .box .desc h3 {
+    font-size: 1.3rem;
+}
+
+.members .box img {
+    height: 60%;
+}
+
+.members .box:hover {
+    box-shadow: 2px 2px 10px black;
+    margin-top: 5px;
+
+}
+
+.about {
+    width: 97%;
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: justify;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.gallery {
+    background-color: rgba(184, 189, 183, 0.728);
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.gallery img {
+    width: 30%;
+    height: 400px;
+    object-fit: contain;
+
+    /* transition-delay: 1.5s; */
+    padding: 1rem;
+}
+
+/* .gallery img:hover{
+    width: 40%;
+    height: 450px;
+} */
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: rgb(250, 241, 241);
+    /* height: 200px; */
+    width: 100vw;
+
+}
+
+.foot .social {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+.foot .social a i {
+    margin: 10px;
+    margin-left: 2rem;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.foot .social a i:hover {
+    margin-top: 2px;
+    /* box-shadow: 1px 1px 5px rgb(0, 0, 0); */
+}
+
+.foot .contact {
+
+    font-weight: 400;
+    font-size: 1rem;
+    margin-right: 60px;
+    margin-top: 10px;
+    height: 150px;
+    line-height: 1rem;
+    text-align: center;
+
+}
+
+.foot .footlogo img {
+    height: 20vh;
+    /* width: 200px; */
+    /* margin-left: 200px; */
+
+}
+
+a .goto{
+    height: 2rem;
+    width: 2rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+}
+@media (max-width:1000px) {
+
+    .nav .home i {
+        display: inline;
+        font-size: x-large;
+    }
+
+    .nav .home ul a {
+        display: none;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.gallery img {
+    max-width: 100%;
+    /* Ensure images don't exceed their container width */
+    height: auto;
+    transition: 2s;
+    transition-delay: 2s;
+}
+
+.foot {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width:580px) {
+    .name-image {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width:840px) {
+    .foot {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .foot div {
+        margin: auto;
+    }
+}
+body{
+    scroll-behavior:smooth;
+}
